@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #6c7a89;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-1 {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  /* border-bottom: 1px solid #242424; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* background-color: red; */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+
+  /* background-color: blue; */
+}
+
+button {
+  background: none;
+  margin: 1rem;
+  width: 200px;
+  height: 80px;
+  border: solid 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Button 1 */
+button.btn1 {
+  color: orange;
+  transition: all 0.5s;
+}
+
+button.btn1:hover {
+  border-color: orange;
+  color: white;
+  box-shadow: 0 0.5rem 0.5rem -0.4rem violet;
+  transform: translateX(10px) translateY(-10px);
+}
+
+/* Button 2 */
+button.btn2 {
+  background-color: #121212;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #3c67e3;
+  border-radius: 10px;
+}
+
+button.btn2:hover {
+  color: #fff;
+  animation: pluse 1.4s ease-in-out infinite;
+}
+
+@keyframes pluse {
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+/* Button 3 */
+button.btn3 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+
+  background-color: midnightblue;
+}
+
+button.btn3:hover {
+  color: midnightblue;
+  background-color: orange;
+  box-shadow: 0 0.5rem 0.5rem -0.4rem black;
+}
